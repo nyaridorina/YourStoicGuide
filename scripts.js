@@ -1,0 +1,61 @@
+const quotes = [
+    "Focus on what you can control, and let go of what you can’t.",
+    "Don’t waste time on things that don’t matter.",
+    "Practice gratitude for what you have.",
+    "Embrace challenges as opportunities for growth.",
+    "Learn from your mistakes and failures.",
+    "Don’t seek external validation or approval.",
+    "Cultivate inner peace and calmness.",
+    "Live in accordance with your values.",
+    "Practice self-discipline and self-control.",
+    "Don’t get attached to material possessions.",
+    "Take care of your body and mind.",
+    "Accept the impermanence of life.",
+    "Be mindful of your thoughts and emotions.",
+    "Don’t judge others.",
+    "Be kind and compassionate to all.",
+    "Don’t compare yourself to others.",
+    "Practice acceptance and equanimity.",
+    "Don’t dwell on the past or worry about the future.",
+    "Focus on the present moment.",
+    "Seek wisdom and knowledge.",
+    "Live with integrity and honesty.",
+    "Be responsible for your actions and choices.",
+    "Embrace change and uncertainty.",
+    "Find joy in simplicity.",
+    "Practice humility.",
+    "Don’t seek pleasure or avoid pain.",
+    "Be patient and persistent.",
+    "Practice forgiveness and letting go.",
+    "Don’t hold grudges or resentments.",
+    "Be open-minded and curious.",
+    "Practice empathy and understanding.",
+    "Don’t take things personally.",
+    "Be adaptable and flexible.",
+    "Practice self-reflection and introspection.",
+    "Don’t let fear control you.",
+    "Be resilient and bounce back from setbacks.",
+    "Don’t make assumptions or jump to conclusions.",
+    "Be proactive and take initiative.",
+    "Practice self-awareness and self-improvement.",
+    "Don’t cling to rigid beliefs or dogma.",
+    "Be optimistic and see the good in all situations.",
+    "Practice detachment and non-attachment.",
+    "Don’t get caught up in drama or gossip.",
+    "Be grateful for challenges and difficulties.",
+    "Practice moderation and balance.",
+    "Don’t let your emotions cloud your judgment.",
+    "Be authentic and true to yourself.",
+    "Practice simplicity and minimalism.",
+    "Don’t let external circumstances dictate your happiness.",
+    "Live each day with purpose and meaning.",
+    ];
+    
+    const generateBtn = document.getElementById('generate-btn');
+    const quote = document.getElementById('quote');
+    
+    generateBtn.addEventListener('click', () => {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      quote.textContent = quotes[randomIndex];
+    });
+    
